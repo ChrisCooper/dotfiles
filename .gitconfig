@@ -3,6 +3,8 @@
   name = Chris Cooper
   email = chris@quixotic-chris.com
 
+[push]
+  default = simple
 
 [alias]
   ci = commit
