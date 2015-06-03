@@ -1,1 +1,5 @@
-alias python-server='python -m SimpleHTTPServer'
+alias python-serve='python -m SimpleHTTPServer'
+
+# "Unlimited" bash history.
+export HISTFILESIZE=
+export HISTSIZE=
