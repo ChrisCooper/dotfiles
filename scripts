@@ -1,2 +1,13 @@
 # Backup mirror
-rsync -gloptruncv /media/chris/CoupOrigina/ /media/chris/CoupMirror
+rsync -gloptrncv --delete /media/chris/CoupOrigina/ /media/chris/CoupMirror
+
+--verbose
+--checksum              # skip based on checksum, not mod-time & size
+--recursive
+--links                 # copy symlinks as symlinks
+--perms                 # preserve permissions
+--owner                 # preserve owner (super-user only)
+--group                 # preserve group
+--times                 # preserve modification times
+--dry-run               # perform a trial run with no changes made
+--delete                # delete extraneous files from dest dirs
